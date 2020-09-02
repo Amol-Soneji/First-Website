@@ -1,2 +1,2 @@
-My first website that I am creating without using a predifined template from an external source.  
+My first website that I am creating without using a predefined template from an external source.  
 
