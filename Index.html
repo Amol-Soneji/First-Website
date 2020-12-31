@@ -15,8 +15,7 @@
         color: green;
       }
       #Online-Presence-Title{
-        position: absolute;
-        right:  32px;
+        grid-area: header;
         border: 3px solid #519ECC;
         padding:  3px;
         background-color: #519ECC;
@@ -25,27 +24,38 @@
         font-size:  1.5em;
       }
       #Online-Presence-Section {
-        position: absolute;
-        right: 32px;
-        bottom:  0px;
-        border: 3px solid #519ECC;
+        grid-area: main;
+        border: 3px;
         padding: 3px;
         background-color: transparent;
+      }
+      #Online-Presence-Grid {
+        display: grid;
+        grid: 
+          'header'
+          'main';
+        grid-gap: 10px;
+        float: right;
+        right: 32px;
+        border: 3px solid #519ECC;
+        margin: 3px;
       }
     </style>
   </head>
   <body>
-    <div id="Online-Presence-Title">
-      Online Presence
+    <div id="Online-Presence-Grid">
+      <div id="Online-Presence-Title">
+        Online Presence
+      </div>
+      <div id="Online-Presence-Section">
+        <a href="https://stackexchange.com/users/5615544/amol-soneji"><img src="https://stackexchange.com/users/flair/5615544.png" width="208" height="58" alt="profile for Amol Soneji on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Amol Soneji on Stack Exchange, a network of free, community-driven Q&amp;A sites" /></a>
+        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+        <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="amol-soneji"><a class="LI-simple-link" href='https://www.linkedin.com/in/amol-soneji?trk=profile-badge'>Amol Soneji</a></div>
+        <a href="https://www.quora.com/profile/Amol-Soneji/">Quora Profile</a>
+        <a href="https://www.github.com/Amol-Soneji">GitHub Profile</a>
+        <a href="https://answers.microsoft.com/en-us/profile/f208b85e-d36b-465b-9694-f56b5a2feb85?sort=LastReplyDate&dir=Desc&tab=Threads&forum=allcategories&meta=&status=&mod=&advFil=&postedAfter=undefined&postedBefore=undefined&threadType=All&page=1">Microsoft Community Profile</a>
+        <a href="https://www.xing.com/profile/Amol_Soneji">Xing Profile</a>
     </div>
-    <div id="Online-Presence-Section">
-      <a href="https://stackexchange.com/users/5615544/amol-soneji"><img src="https://stackexchange.com/users/flair/5615544.png" width="208" height="58" alt="profile for Amol Soneji on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Amol Soneji on Stack Exchange, a network of free, community-driven Q&amp;A sites" /></a>
-      <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-      <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="amol-soneji"><a class="LI-simple-link" href='https://www.linkedin.com/in/amol-soneji?trk=profile-badge'>Amol Soneji</a></div>
-      <a href="https://www.quora.com/profile/Amol-Soneji/">Quora Profile</a>
-      <a href="https://www.github.com/Amol-Soneji">GitHub Profile</a>
-      <a href="https://answers.microsoft.com/en-us/profile/f208b85e-d36b-465b-9694-f56b5a2feb85?sort=LastReplyDate&dir=Desc&tab=Threads&forum=allcategories&meta=&status=&mod=&advFil=&postedAfter=undefined&postedBefore=undefined&threadType=All&page=1">Microsoft Community Profile</a>
-      <a href="https://www.xing.com/profile/Amol_Soneji">Xing Profile</a>
     </div>
     <p>
       Resume
