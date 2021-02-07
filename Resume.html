@@ -7,19 +7,48 @@
     <!-- Favicon -->
     <link rel='icon' href='https://pbs.twimg.com/profile_images/1264412594137432064/rzwN6tMj_400x400.jpg' type='image/jpeg'/>
     <style>
-      #iframe-of-Resume
-      {
+      #iframe-of-Resume{
         display:  flex;
         justify-content:  center;
+      }
+      #navigation-bar-Home{
+        grid-area: home;
+        background-color: #dc9922;
+        text-align: center;
+      }
+      #navigation-bar-Projects{
+        grid-area: projects;
+        background-color: #dc9922;
+        text-align: center;
+      }
+      #navigation-bar-Cover_Letter{
+        grid-area: cover_letter;
+        background-color: #dc9922;
+        text-align: center;
+      }
+      #navigation-bar-Grid{
+        display: grid;
+        grid: 
+          'home projects cover_letter';
+        grid-gap: 3px;
+        background-color: black;
+        border: 3px solid black;
+        margin: 5px;
       }
     </style>
   </head>
   <body>
-    <div>
-      <p>
-        Home
-      </p>
-    <div>
+    <div id="navigation-bar-Grid">
+      <div id="navigation-bar-Home">
+        <a href="">Home</a>
+      </div>
+      <div id="navigation-bar-Projects">
+        <a href="">Projects</a>
+      </div>
+      <div id="navigation-bar-Cover_Letter">
+        <a href="">Cover Letter</a>
+      </div>
+    </div>
     <div id="iframe-of-Resume">
       <iframe src="https://onedrive.live.com/embed?cid=1C8EEF445029FAAA&resid=1C8EEF445029FAAA%21236553&authkey=AK12Hb6IONtDCXc&em=2" width="952" height="576" frameborder="0" scrolling="no"></iframe>
     </div>
