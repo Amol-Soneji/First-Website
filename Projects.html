@@ -8,11 +8,43 @@
     <link rel='icon' href='https://pbs.twimg.com/profile_images/1264412594137432064/rzwN6tMj_400x400.jpg' type='image/jpeg'/>
     <!-- Inline Style -->
     <style>
+      #navigation-bar-Home{
+        grid-area: home;
+        background-color: #dc9922;
+        text-align: center;
+      }
+      #navigation-bar-Resume{
+        grid-area: resume;
+        background-color: #dc9922;
+        text-align: center;
+      }
+      #navigation-bar-Cover_Letter{
+        grid-area: cover_letter;
+        background-color: #dc9922;
+        text-align: center;
+      }
+      #navigation-bar-Grid{
+        display: grid;
+        grid: 
+          'home resume cover_letter';
+        grid-gap: 3px;
+        background-color: black;
+        border: 3px solid black;
+        margin: 5px;
+      }
     </style>
   </head>
   <body>
-    <p>
-      Home
-    </p>
+    <div id="navigation-bar-Grid">
+      <div id="navigation-bar-Home">
+        <a href="">Home</a>
+      </div>
+      <div id="navigation-bar-Resume">
+        <a href="">Resume</a>
+      </div>
+      <div id="navigation-bar-Cover_Letter">
+        <a href="">Cover Letter</a>
+      </div>
+    </div>
   </body>
 </html>
