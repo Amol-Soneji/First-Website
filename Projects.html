@@ -32,6 +32,59 @@
         border: 3px solid black;
         margin: 5px;
       }
+      #project-Title{
+        grid-area: project_title;
+        background-color: transparent;
+        text-align: left;
+      }
+      #project-Preview{
+        grid-area: project_preview;
+        background-color: transparent;
+      }
+      #project-Description{
+        grid-area: project_description;
+        background-color: transparent;
+        text-align: justify;
+      }
+      #project-Link{
+        grid-area: project_link;
+        background-color: transparent;
+        text-align: left;
+      }
+      #project-Grid{
+        display: grid;
+        grid: 
+          'project_title project_description'
+          'project_preview project_description'
+          'project_preview project_description'
+          'project_preview project_link';
+        grid-gap: 5px;
+        background-color: #f48024;
+        border: 5px solid #f48024;
+        margin: 12px;
+      }
+      #footer-Last_Changed{
+        grid-area: last_changed;
+        background-color: #f48024;
+        text-align: left;
+      }
+      #footer-Author{
+        grid-area: author;
+        background-color: #f48024;
+        text-align: center;
+      }
+      #footer-Go_To_Top{
+        grid-area: go_to_top;
+        background-color: #f48024;
+        text-align: right;
+      }
+      footer{
+        display: grid;
+        grid: 
+          'last_changed author go_to_top';
+        grid-gap: 0px;
+        border: 5px solid #f48024;
+      }
     </style>
   </head>
   <body>
@@ -46,5 +99,20 @@
         <a href="">Cover Letter</a>
       </div>
     </div>
+    <div>
+    </div>
+    <div id="project-Grid">
+    </div>
+    <footer>
+      <div id="footer-Last_Changed">
+        March 4, 2020
+      </div>
+      <div id="footer-Author">
+        Amol Soneji    2020
+      </div>
+      <div id="footer-Go_To_Top">
+        Go to top of page
+      </div>
+    </footer>
   </body>
 </html>
