@@ -5,7 +5,7 @@
       Amol Soneji - Home Page
     </title>
     <!-- Favicon -->
-    <link rel='icon' href='https://pbs.twimg.com/profile_images/1264412594137432064/rzwN6tMj_400x400.jpg' type='image/jpeg'/>
+    <link rel="icon" href="https://pbs.twimg.com/profile_images/1264412594137432064/rzwN6tMj_400x400.jpg" type="image/jpeg">
     <!--Inline style -->
     <style>
       .Page-Background {
@@ -42,13 +42,19 @@
         margin: 3px;
       }
       #profile-Image-Style{
-        float: right;
+        display: flex;
+        justify-content: right;
         margin: 7px;
 	right:32px;
       }
       #page-Welcome-Context{
-	margin: 7px;
+        margin: 7px;
 	float: left;
+      }
+      #links-To-Other-Pages{
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
       }
       #footer-Last_Changed{
         grid-area: last_changed;
@@ -71,45 +77,42 @@
           'last_changed author go_to_top';
         grid-gap: 0px;
         border: 5px solid #f48024;
+        width: 100%;
       }
     </style>
   </head>
   <body>
     <div id="profile-Image-Style">
-      <img src="https://avatars.githubusercontent.com/u/17868362?s=400&u=d95e2e9d94f1d9c5c72821992c23f233ceca51ed&v=4"/>
+      <img src="https://avatars.githubusercontent.com/u/17868362?s=400&amp;u=d95e2e9d94f1d9c5c72821992c23f233ceca51ed&amp;v=4"><br>
     </div>
     <div id="Online-Presence-Grid">
       <div id="Online-Presence-Title">
         Online Presence
       </div>
       <div id="Online-Presence-Section">
-        <a href="https://stackexchange.com/users/5615544/amol-soneji"><img src="https://stackexchange.com/users/flair/5615544.png" width="208" height="58" alt="profile for Amol Soneji on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Amol Soneji on Stack Exchange, a network of free, community-driven Q&amp;A sites" /></a>
-        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-        <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="amol-soneji"><a class="LI-simple-link" href='https://www.linkedin.com/in/amol-soneji?trk=profile-badge'>Amol Soneji</a></div>
+        <a href="https://stackexchange.com/users/5615544/amol-soneji"><img src="https://stackexchange.com/users/flair/5615544.png" width="208" height="58" alt="profile for Amol Soneji on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Amol Soneji on Stack Exchange, a network of free, community-driven Q&amp;A sites"></a>
+        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async="" defer=""></script>
+        <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="amol-soneji"><a class="LI-simple-link" href="https://www.linkedin.com/in/amol-soneji?trk=profile-badge">Amol Soneji</a></div>
         <a href="https://www.quora.com/profile/Amol-Soneji/">Quora Profile</a>
         <a href="https://www.github.com/Amol-Soneji">GitHub Profile</a>
-        <a href="https://answers.microsoft.com/en-us/profile/f208b85e-d36b-465b-9694-f56b5a2feb85?sort=LastReplyDate&dir=Desc&tab=Threads&forum=allcategories&meta=&status=&mod=&advFil=&postedAfter=undefined&postedBefore=undefined&threadType=All&page=1">Microsoft Community Profile</a>
+        <a href="https://answers.microsoft.com/en-us/profile/f208b85e-d36b-465b-9694-f56b5a2feb85?sort=LastReplyDate&amp;dir=Desc&amp;tab=Threads&amp;forum=allcategories&amp;meta=&amp;status=&amp;mod=&amp;advFil=&amp;postedAfter=undefined&amp;postedBefore=undefined&amp;threadType=All&amp;page=1">Microsoft Community Profile</a>
         <a href="https://www.xing.com/profile/Amol_Soneji">Xing Profile</a>
+      </div>
     </div>
+    <div id="links-To-Other-Pages">
+      <p>
+        <a href="">Resume</a>
+      </p>
+      <p>
+        <a href="">Cover Letter</a>
+      </p>
+      <p>
+        <a href="">Projects</a>
+      </p>
     </div>
-    <p>
-      <a href="">
-        Resume
-      </a>
-    </p>
-    <p>
-      <a href="">
-        Cover Letter
-      </a>
-    </p>
-    <p>
-      <a href="">
-        Projects
-      </a>
-    </p>
     <footer>
       <div id="footer-Last_Changed">
-        November 14, 2021
+        November 26, 2021
       </div>
       <div id="footer-Author">
         Amol Soneji    2021
