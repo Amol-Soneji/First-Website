@@ -1,0 +1,121 @@
+.Page-Background {
+
+}
+.Main-Page-Title {
+  color: green;
+  text-align: center;
+}
+#About-Me{
+  position: absolute;
+  top: 1.7rem;
+  margin-right: 12.6%;
+  font-family: "Times New Roman",Serif;
+
+}
+#About-Me h2{
+  text-decoration: underline;
+}
+#Online-Presence-Title{
+  grid-area: header;
+  border: 3px solid #519ECC;
+  padding:  3px;
+  background-color: #519ECC;
+  text-align: center;
+  font-family:  Georgia, serif;
+  font-size:  1.5em;
+}
+#Online-Presence-Section {
+  grid-area: main;
+  border: 3px;
+  padding: 3px;
+  background-color: transparent;
+}
+#Online-Presence-Section a{
+  text-wrap: nowrap;
+}
+#Online-Presence-Grid {
+  display: grid;
+  grid: 
+    'header'
+    'main';
+  grid-gap: 10px;
+  float: right;
+  right: 32px;
+  border: 3px solid #519ECC;
+  margin: 2vw;
+  margin-bottom: 5%;
+  max-width: 50%;
+}
+#Non-Badge-Links a:first-of-type{
+  display: inline-block;
+  padding-right: 5%;
+  border-right: 1px solid #000000;
+}
+#Non-Badge-Links a:last-of-type{
+  display: inline-block;
+  padding-left: 5%;
+  border-left: 1px solid #000000;
+}
+#Non-Badge-Links a:not(:first-child):not(:last-child){
+  display: inline-block;
+  padding-right: 5%;
+  padding-left: 5%;
+  border-right: 1px solid #000000;
+  border-left: 1px solid #000000;
+}
+#profile-Image-Style{
+  display: flex;
+  justify-content: right;
+  margin: 7px;
+  right: 32px;
+}
+#profile-Image-Style img{
+  max-width: 12.5%;
+  max-height: 12.5%;
+}
+#page-Welcome-Context{
+  margin: 7px;
+  float: left;
+}
+#links-To-Other-Pages{
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+#footer-Last_Changed{
+  grid-area: last_changed;
+  border-right: 1px solid #000000;
+  background-color: #f48024;
+  text-align: left;
+}
+#footer-Author{
+  grid-area: author;
+  border-right: 1px solid #000000;
+  border-left: 1px solid #000000;
+  background-color: #f48024;
+  text-align: center;
+}
+#footer-Go_To_Top{
+  grid-area: go_to_top;
+  display: block;
+  border-left: 1px solid #000000;
+  background-color: #f48024;
+  text-align: right;
+  text-decoration: none;
+}
+#footer-Go_To_Top:hover{
+  background-color: #0000EE;
+  color: #f48024;
+  text-decoration: none;
+}
+#footer-grid{
+  display: grid;
+  grid: 
+    'last_changed author go_to_top';
+  grid-gap: 0px;
+  border: 5px solid #f48024;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
