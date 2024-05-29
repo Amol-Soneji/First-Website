@@ -22,6 +22,13 @@
         background-color: #dc9922;
         text-align: center;
       }
+      #navigation-bar-Grid a{
+        text-decoration: none;
+      }
+      #navigation-bar-Grid a:hover{
+        background-color: #0000EE;
+        color: #dc9922;
+      }
       #navigation-bar-Grid{
         display: grid;
         grid:
@@ -35,6 +42,7 @@
         margin-left: 7vw;
         margin-right: 7vw;
         text-align: center;
+        text-decoration: underline;
       }
       main{
         margin-left: 7vw;
@@ -76,24 +84,37 @@
       #footer-Last_Changed{
         grid-area: last_changed;
         background-color: #f48024;
+        border-right: 1px solid #000000;
         text-align: left;
       }
       #footer-Author{
         grid-area: author;
         background-color: #f48024;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
         text-align: center;
       }
       #footer-Go_To_Top{
         grid-area: go_to_top;
         background-color: #f48024;
+        border-left: 1px solid #000000;
         text-align: right;
+        text-decoration: none;
+      }
+      #footer-Go_To_Top:hover{
+        background-color: #0000EE;
+        color: #f48024;
       }
       footer{
         display: grid;
         grid:
           'last_changed author go_to_top';
         grid-gap: 0px;
+        position: fixed;
+        width: 100%;
         border: 5px solid #f48024;
+        left: 0;
+        bottom: 0;
       }
 		</style>
 	</head>
@@ -122,13 +143,14 @@
     </main>
 		<footer>
       <div id="footer-Last_Changed">
-        May 27, 2024
+        May 28, 2024
       </div>
       <div id="footer-Author">
         Amol Soneji    2024
       </div>
-      <div id="footer-Go_To_Top">
-        <a href="#top">Go to top of page</a>
+      <a id="footer-Go_To_Top" href="#top">
+        <span>Go to top of page</span>
+      </a>
       </div>
 		</footer>
 	</body>

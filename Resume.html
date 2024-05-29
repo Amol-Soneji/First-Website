@@ -7,6 +7,7 @@
     <!-- Favicon -->
     <link rel='icon' href='https://pbs.twimg.com/profile_images/1264412594137432064/rzwN6tMj_400x400.jpg' type='image/jpeg'/>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
     <style>
       #iframe-of-Resume{
         display:  flex;
@@ -53,19 +54,24 @@
       #footer-Last_Changed{
         grid-area: last_changed;
         background-color: #f48024;
+        border-right: 1px solid #000000;
         text-align: left;
       }
       #footer-Author{
         grid-area: author;
         background-color: #f48024;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
         text-align: center;
       }
       #footer-Go_To_Top{
         grid-area: go_to_top;
         background-color: #f48024;
+        border-left: 1px solid #000000;
         text-align: right;
+        text-decoration: none;
       }
-      #footer-Go_To_Top:hover, #footer-Go_To_Top a:hover{
+      #footer-Go_To_Top:hover{
         background-color: #0000EE;
         color: #f48024;
       }
@@ -107,13 +113,14 @@
     </main>
     <footer>
       <span id="footer-Last_Changed">
-        April 28, 2024
+        May 28, 2024
       </span>
       <span id="footer-Author">
         Amol Soneji    2024
       </span>
-      <span id="footer-Go_To_Top">
-        <a href="#top">Go to top of page</a>
+      <a id="footer-Go_To_Top" href="#top">
+        <span>Go to top of page</span>
+      </a>
       </span>
     </footer>
   </body>
