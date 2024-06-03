@@ -16,6 +16,8 @@
   text-decoration: underline;
 }
 #Online-Presence{
+  display: flex;
+  flex-direction: column;
   margin: 1vw;
   width: 100%;
   border: 2px solid #519ECC;
@@ -29,6 +31,9 @@
   font-family: Georgia, serif;
 }
 #Online-Presence-Badges{
+  display: flex;
+  flex-direction: row;
+  align-self: center;
   border: 4px;
   padding: 4px;
   background-color: transparent;
@@ -39,6 +44,25 @@
   border-right: 2px;
   border-bottom: 4px;
   padding: 1vw;
+}
+#Online-Presence-Links{
+  display: inline-block;
+  margin-left: 2vw;
+  margin-bottom: 2vw;
+}
+#Online-Presence-Links a:first-of-type{
+  padding-right: 1vw;
+  border-right: 2px solid #000000;
+}
+#Online-Presence-Links a:last-of-type{
+  padding-left: 1vw;
+  border-left: 2px solid #000000;
+}
+#Online-Presence-Links a:not(:first-of-type):not(:last-of-type){
+  padding-left: 1vw;
+  padding-right: 1vw;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #000000;
 }
 #profile-Image-Style{
   display: flex;
