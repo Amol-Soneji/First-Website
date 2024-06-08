@@ -55,22 +55,30 @@
         border: 3px solid black;
         margin: 5px;
       }
+      #page-Title{
+        text-align: center;
+        text-decoration: underline;
+      }
       .project-Title{
-        grid-area: project_title;
+        grid-area: 1 / 1 / 2 / -1;
         background-color: transparent;
-        text-align: left;
+        text-align: center;
+        text-decoration: underline;
       }
       .project-Preview{
-        grid-area: project_preview;
+        grid-area: 2 / 1 / -1 / 2;
         background-color: transparent;
       }
+      .project-Preview iframe{
+        width: 100%;
+      }
       .project-Description{
-        grid-area: project_description;
+        grid-area: 2 / 2 / 3 / -1;
         background-color: transparent;
         text-align: justify;
       }
       .project-Link{
-        grid-area: project_link;
+        grid-area: 3 / 2 / -1 / -1;
         background-color: transparent;
         text-align: left;
       }
@@ -78,16 +86,12 @@
         text-decoration: none;
       }
       .project-Link a:hover{
-        background-color: 
+        /*background-color: ;*/
         color: #f48024;
       }
       .project-Grid{
         display: grid;
-        grid: 
-          'project_title project_description'
-          'project_preview project_description'
-          'project_preview project_description'
-          'project_preview project_link';
+        grid: 4.3rem auto auto / 50% 50%;
         grid-gap: 5px;
         background-color: #f48024;
         border: 5px solid #f48024;
@@ -145,15 +149,36 @@
         </div>
       </div>
     </nav>
-    <div>
-    </div>
     <main>
+      <h1 id="page-Title">Projects</h1>
       <div class="project-Grid">
+        <h2 class="project-Title"></h2>
+        <div class="project-Preview">
+          <iframe src="" title=""/></iframe>
+        </div>
+        <p class="project-Description">
+          
+        </p>
+        <div class="project-Link">
+          <a href=""></a>
+        </div>
+      </div>
+      <div class="project-Grid">
+        <h2 class="project-Title">Tribute Page Project</h2>
+        <div class="project-Preview">
+          <iframe src="" title="Tribute Page Project"/></iframe>
+        </div>
+        <p class="project-Description">
+
+        </p>
+        <div class="project-Link">
+          <a href="" aria-label="Link to Tribute Page Project"></a>
+        </div>
       </div>
     </main>
     <footer>
       <div id="footer-Last_Changed">
-        May 28, 2024
+        June 7, 2024
       </div>
       <div id="footer-Author">
         Amol Soneji    2024
