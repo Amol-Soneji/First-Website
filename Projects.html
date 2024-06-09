@@ -51,9 +51,14 @@
         grid: 
           'home resume cover_letter';
         grid-gap: 3px;
+        position: fixed;
         background-color: black;
         border: 3px solid black;
-        margin: 5px;
+        margin: 0;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        z-index: 2;
       }
       #page-Title{
         text-align: center;
@@ -71,6 +76,7 @@
       }
       .project-Preview iframe{
         width: 100%;
+        background-color: #FFFFFF;
       }
       .project-Description{
         grid-area: 2 / 2 / 3 / -1;
@@ -96,6 +102,9 @@
         background-color: #f48024;
         border: 5px solid #f48024;
         margin: 12px 4vw 12px 4vw;
+      }
+      .project-Grid:last-of-type{
+        margin-bottom: 5vh;
       }
       #footer-Last_Changed{
         grid-area: last_changed;
@@ -178,7 +187,7 @@
     </main>
     <footer>
       <div id="footer-Last_Changed">
-        June 7, 2024
+        June 9, 2024
       </div>
       <div id="footer-Author">
         Amol Soneji    2024
