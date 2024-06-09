@@ -5,6 +5,9 @@
   color: green;
   text-align: center;
 }
+#nav-Links *, #links-To-Other-Pages *{
+  color: #3B9491;
+}
 #About-Me{
   position: relative;
   top: 1.7rem;
