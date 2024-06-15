@@ -51,17 +51,22 @@
       #footer-Last_Changed{
         grid-area: last_changed;
         background-color: #f48024;
+        border-right: 1px solid #000000;
         text-align: left;
       }
       #footer-Author{
         grid-area: author;
         background-color: #f48024;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
         text-align: center;
       }
       #footer-Go_To_Top{
         grid-area: go_to_top;
         background-color: #f48024;
+        border-left: 1px solid #000000;
         text-align: right;
+        text-decoration: none;
       }
       footer{
         display: grid;
@@ -70,14 +75,11 @@
         grid-gap: 0px;
         border: 5px solid #f48024;
         position: fixed;
-        width: 100%;
-        bottom: 0%;
-        left: 0%;
+        width: 100vw;
+        bottom: 0;
+        left: 0;
       }
-      footer a{
-        text-decoration: none;
-      }
-      footer a:hover{
+      #footer-Go_To_Top:hover{
         background-color: #0000EE;
         color: #f48024;
       }
@@ -105,14 +107,14 @@
     </main>
     <footer>
       <div id="footer-Last_Changed">
-        June 12, 2024
+        June 13, 2024
       </div>
       <div id="footer-Author">
         Amol Soneji    2024
       </div>
-      <div id="footer-Go_To_Top">
-        <a href="#top">Go to top of page</a>
-      </div>
+      <a id="footer-Go_To_Top" href="#top">
+        <span>Go to top of page</span>
+      </a>
     </footer>
   </body>
 </html>
