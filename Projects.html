@@ -15,36 +15,15 @@
         background-color: #dc9922;
         text-align: center;
       }
-      #navigation-bar-Home a{
-        text-decoration: none;
-      }
-      #navigation-bar-Home a:hover{
-        background-color: #0000EE;
-        color: #dc9922;
-      }
       #navigation-bar-Resume{
         grid-area: resume;
         background-color: #dc9922;
         text-align: center;
       }
-      #navigation-bar-Resume a{
-        text-decoration: none;
-      }
-      #navigation-bar-Resume a:hover{
-        background-color: #0000EE;
-        color: #dc9922;
-      }
       #navigation-bar-Cover_Letter{
         grid-area: cover_letter;
         background-color: #dc9922;
         text-align: center;
-      }
-      #navigation-bar-Cover_Letter a{
-        text-decoration: none;
-      }
-      #navigation-bar-Cover_Letter a:hover{
-        background-color: #0000EE;
-        color: #dc9922;
       }
       #navigation-bar-Grid{
         display: grid;
@@ -59,6 +38,13 @@
         top: 0;
         left: 0;
         z-index: 2;
+      }
+      #navigation-bar-Grid a{
+        text-decoration: none;
+      }
+      #navigation-bar-Grid a:hover{
+        background-color: #0000EE;
+        color: #dc9922;
       }
       #page-Title{
         text-align: center;
@@ -154,15 +140,15 @@
   <body>
     <nav>
       <div id="navigation-bar-Grid">
-        <div id="navigation-bar-Home">
-          <a href="/Index.html">Home</a>
-        </div>
-        <div id="navigation-bar-Resume">
-          <a href="/Resume.html">Resume</a>
-        </div>
-        <div id="navigation-bar-Cover_Letter">
-          <a href="/Cover_Letter.html">Cover Letter</a>
-        </div>
+        <a id="navigation-bar-Home" href="/Index.html">
+          <span>Home</span>
+        </a>
+        <a id="navigation-bar-Resume" href="/Resume.html">
+          <span>Resume</span>
+        </a>
+        <a id="navigation-bar-Cover_Letter" href="/Cover_Letter.html">
+          <span>Cover Letter</span>
+        </a>
       </div>
     </nav>
     <main>
@@ -218,7 +204,7 @@
     </main>
     <footer>
       <div id="footer-Last_Changed">
-        June 22, 2024
+        June 24, 2024
       </div>
       <div id="footer-Author">
         Amol Soneji    2024
