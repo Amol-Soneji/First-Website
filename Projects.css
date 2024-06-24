@@ -1,0 +1,125 @@
+#navigation-bar-Home{
+  grid-area: home;
+  background-color: #dc9922;
+  text-align: center;
+}
+#navigation-bar-Resume{
+  grid-area: resume;
+  background-color: #dc9922;
+  text-align: center;
+}
+#navigation-bar-Cover_Letter{
+  grid-area: cover_letter;
+  background-color: #dc9922;
+  text-align: center;
+}
+#navigation-bar-Grid{
+  display: grid;
+  grid: 
+    'home resume cover_letter';
+  grid-gap: 3px;
+  position: fixed;
+  background-color: black;
+  border: 3px solid black;
+  margin: 0;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+#navigation-bar-Grid a{
+  text-decoration: none;
+}
+#navigation-bar-Grid a:hover{
+  background-color: #0000EE;
+  color: #dc9922;
+}
+#page-Title{
+  text-align: center;
+  text-decoration: underline;
+}
+.project-Title{
+  grid-area: 1 / 1 / 2 / -1;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: underline;
+}
+.project-Preview{
+  grid-area: 2 / 1 / -1 / 2;
+  background-color: transparent;
+}
+.project-Preview iframe{
+  width: 100%;
+  background-color: #FFFFFF;
+}
+.project-Description{
+  grid-area: 2 / 2 / 3 / -1;
+  background-color: transparent;
+  padding-right: 2%;
+  padding-left: 2%;
+  text-align: justify;
+}
+.project-Link{
+  grid-area: 3 / 2 / -1 / -1;
+  background-color: transparent;
+  text-align: left;
+}
+.project-Link a{
+  text-decoration: none;
+}
+.project-Link a:hover{
+  /*background-color: ;*/
+  color: #f48024;
+}
+.project-Grid{
+  display: grid;
+  grid: 4.3rem auto auto / 50% 50%;
+  grid-gap: 5px;
+  background-color: #f48024;
+  border: 5px solid #f48024;
+  margin: 12px 4vw 12px 4vw;
+}
+.project-Grid:last-of-type{
+  margin-bottom: 5vh;
+}
+#footer-Last_Changed{
+  grid-area: last_changed;
+  border-right: 1px solid #000000;
+  padding-left: 5px;
+  text-align: left;
+}
+#footer-Author{
+  grid-area: author;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  text-align: center;
+}
+#footer-Go_To_Top{
+  grid-area: go_to_top;
+  border-left: 1px solid #000000;
+  padding-right: 5px;
+  text-align: right;
+  text-decoration: none;
+}
+#footer-Go_To_Top:hover{
+  background-color: #0000EE;
+  color: #f48024;
+}
+footer{
+  display: grid;
+  grid: 
+    'last_changed author go_to_top';
+  grid-gap: 0px;
+  background-color: #f48024;
+  padding: 5px 0px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+@media only screen and (max-width: 640px){
+  .project-Grid:last-of-type{
+    margin-bottom: 10vh;
+  }
+}
