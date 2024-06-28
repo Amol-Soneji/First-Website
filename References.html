@@ -88,21 +88,20 @@
       }
       #footer-Last_Changed{
         grid-area: last_changed;
-        background-color: #f48024;
         border-right: 1px solid #000000;
+        padding-left: 5px;
         text-align: left;
       }
       #footer-Author{
         grid-area: author;
-        background-color: #f48024;
         border-left: 1px solid #000000;
         border-right: 1px solid #000000;
         text-align: center;
       }
       #footer-Go_To_Top{
         grid-area: go_to_top;
-        background-color: #f48024;
         border-left: 1px solid #000000;
+        padding-right: 5px;
         text-align: right;
         text-decoration: none;
       }
@@ -117,7 +116,8 @@
         grid-gap: 0px;
         position: fixed;
         width: 100%;
-        border: 5px solid #f48024;
+        background-color: #f48024;
+        padding: 5px 0px;
         left: 0;
         bottom: 0;
       }
@@ -126,15 +126,15 @@
 	<body>
     <header>
       <nav id="navigation-bar-Grid">
-        <div id="navigation-bar-Home">
-          <a href="/Index.html">Home</a>
-        </div>
-        <div id="navigation-bar-Resume">
-          <a href="/Resume.html">Resume</a>
-        </div>
-        <div id="navigation-bar-Cover_Letter">
-          <a href="/Cover_Letter.html">Cover Letter</a>
-        </div>
+        <a id="navigation-bar-Home" href="/Index.html">
+          <span>Home</span>
+        </a>
+        <a id="navigation-bar-Resume" href="/Resume.html">
+          <span>Resume</span>
+        </a>
+        <a id="navigation-bar-Cover_Letter" href="/Cover_Letter.html">
+          <span>Cover Letter</span>
+        </a>
       </nav>
       <h1>References</h1>
     </header>
@@ -148,7 +148,7 @@
     </main>
 		<footer>
       <div id="footer-Last_Changed">
-        June 12, 2024
+        June 27, 2024
       </div>
       <div id="footer-Author">
         Amol Soneji    2024
