@@ -12,45 +12,31 @@
         background-color: #dc9922;
         text-align: center;
       }
-      #navigation-bar-Home a{
-        text-decoration: none;
-      }
-      #navigation-bar-Home a:hover{
-        background-color: #0000EE;
-        color: #dc9922;
-      }
       #navigation-bar-Resume{
         grid-area: resume;
         background-color: #dc9922;
         text-align: center;
-      }
-      #navigation-bar-Resume a{
-        text-decoration: none;
-      }
-      #navigation-bar-Resume a:hover{
-        background-color: #0000EE;
-        color: dc9922;
       }
       #navigation-bar-Projects{
         grid-area: projects;
         background-color: #dc9922;
         text-align: center;
       }
-      #navigation-bar-Projects a{
-        text-decoration: none;
-      }
-      #navigation-bar-Projects a:hover{
-        background-color: #0000EE;
-        color: #dc9922;
-      }
       #navigation-bar-Grid{
         display: grid;
         grid:
           'home resume projects';
         grid-gap: 3px;
-        background-color: black;
+        background-color: #000000;
         border: 3px solid black;
         margin: 5px;
+      }
+      #navigation-bar-Grid a{
+        text-decoration: none;
+      }
+      #navigation-bar-Grid a:hover{
+        background-color: #0000EE;
+        color: #dc9922;
       }
       h1{
         text-align: center;
@@ -98,7 +84,15 @@
   <body>
     <header>
       <nav id="navigation-bar-Grid">
-        
+        <a id="navigation-bar-Home" href="/Index.html">
+          Home
+        </a>
+        <a id="navigation-bar-Resume" href="/Resume.html">
+          Resume
+        </a>
+        <a id="navigation-bar-Projects" href="/Projects.html">
+          Projects
+        </a>
       </nav>
       <h1>Certificates</h1>
     </header>
@@ -116,7 +110,7 @@
     </main>
     <footer>
       <div id="footer-Last_Changed">
-        May 23, 2024
+        June 29, 2024
       </div>
       <div id="footer-Author">
         Amol Soneji    2024
