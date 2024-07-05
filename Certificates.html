@@ -52,7 +52,30 @@
       }
       .certificate-Listing{
         display: flex;
+        flex-direction: column;
         font-family: Serif;
+        list-style: none;
+      }
+      .certificate-Name{
+        font-size: 1.1em;
+        font-weight: bold;
+      }
+      .certificate-From{
+        font-size: 1.1em;
+      }
+      .certificate-Date{
+        padding-bottom: 1vh;
+      }
+      .certificate-Code{
+        font-family: monospace;
+      }
+      .certificate-Link{
+        font-family: sans-serif;
+      }
+      .certificate-Listing span{
+        font-size: initial;
+        font-weight: normal;
+        font-family: serif;
       }
       #footer-Last_Changed{
         grid-area: last_changed;
@@ -112,19 +135,31 @@
     </header>
     <main>
 
-      <section class="certificate-Listing">
-        
-      </section>
-      <section class="certificate-Listing">
-        
-      </section>
-      <section class="certificate-Listing">
-        
-      </section>
+      <ul class="certificate-Listing">
+        <li class="certificate-Name"><span>Name:&emsp;</span></li>
+        <li class="certificate-From"></li>
+        <li class="certificate-Code"><span>Certificate Code:&emsp;</span></li>
+        <li class="certificate-Link">Link to Certificate:<span>&emsp;</span></li>
+        <li class="certificate-Date"><span>Date issued (and expiring):&nbsp;</span></li>
+      </ul>
+      <ul class="certificate-Listing">
+        <li class="certificate-Name"></li>
+        <li class="certificate-From"></li>
+        <li class="certificate-Code"></li>
+        <li class="certificate-Link"></li>
+        <li class="certificate-Date"></li>
+      </ul>
+      <ul class="certificate-Listing">
+        <li class="certificate-Name"></li>
+        <li class="certificate-From"></li>
+        <li class="certificate-Code"></li>
+        <li class="certificate-Link"></li>
+        <li class="certificate-Date"></li>
+      </ul>
     </main>
     <footer>
       <div id="footer-Last_Changed">
-        June 29, 2024
+        July 4, 2024
       </div>
       <div id="footer-Author">
         Amol Soneji    2024
